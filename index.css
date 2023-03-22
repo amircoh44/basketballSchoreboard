@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Digital-7';
+    src: url('Digital-7.eot');
+    src: url('Digital-7.eot?#iefix') format('embedded-opentype'),
+         url('Digital-7.woff2') format('woff2'),
+         url('Digital-7.woff') format('woff'),
+         url('Digital-7.ttf') format('truetype'),
+         url('Digital-7.svg#Digital-7') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #1a1a1a;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3498db;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    stroke-width: 5px;
+}
+
+.team-score {
+    text-align: center;
+}
+
+h3 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.scorewrap {
+    margin:10px;
+}
+
+.score {
+    color: #fff;
+    background-color: #1a1a1a;
+    width: 200px;
+    margin: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 70px;
+    font-size: 48px;
+    font-family: 'Digital-7', monospace;
+    text-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f, 0 0 30px #f1c40f, 0 0 40px #f1c40f;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .board {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .board {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .team-score {
+        margin-bottom: 20px;
+    }
+
+    .team-score:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 18px;
+    }
+
+    .score {
+        font-size: 36px;
+    }
+}
